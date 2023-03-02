@@ -32,23 +32,5 @@ export const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
 
 
-export const registrarProducto = (codigo,nombre,presentacion,unidades,fecha) =>
-  addDoc(collection(db, "productos"), {codigo,nombre,presentacion,unidades,fecha });
-
-export const eliminarProducto = (id) => deleteDoc(doc(db, "productos", id));
-
-export const getProductoById = (id) => getDoc(doc(db, "productos", id));
-
-export const updateProducto = (id, newFields) =>
-  updateDoc(doc(db, "productos", id), newFields);
-
-export const getProductos = async () => {
-  const productos = []
-  const querySnapshot = await getDocs(query(collection(db, "productos")));
-  querySnapshot.forEach((doc) => {
-    const producto = doc.data()
-    producto.id = doc.id
-    productos.push(producto)
-  });
-  return productos;
-}
+export const registrarUsuario = (cedula,nombres,email,telefono,usuario,contrasena) =>
+  addDoc(collection(db, "usuarios"), {cedula,nombres,email,telefono,usuario,contrasena});
