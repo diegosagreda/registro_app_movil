@@ -18,12 +18,12 @@ import {ref, onValue} from "https://www.gstatic.com/firebasejs/9.6.2/firebase-da
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBDFVdN96t6hwtbT4VqAOVpH6pznp_Kz20",
-  authDomain: "registro-app-16a81.firebaseapp.com",
-  projectId: "registro-app-16a81",
-  storageBucket: "registro-app-16a81.appspot.com",
-  messagingSenderId: "185388144159",
-  appId: "1:185388144159:web:190063eb0e283da10f672a"
+  apiKey: "AIzaSyDVT4q7J1AbIe6UcPdXn9YNECg1adgrLew",
+  authDomain: "app-movil-ef2ab.firebaseapp.com",
+  projectId: "app-movil-ef2ab",
+  storageBucket: "app-movil-ef2ab.appspot.com",
+  messagingSenderId: "232983626384",
+  appId: "1:232983626384:web:954a7621ed366c59078e15"
 };
 
 // Initialize Firebase
