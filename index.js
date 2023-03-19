@@ -8,13 +8,13 @@ const btn_cancelar = document.getElementById("btn-cancelar");
 
 btn_registrar.addEventListener("click", () => {
     const cedula = document.getElementById("cedula").value;
-    const nombres = document.getElementById("nombres").value;
-    const email = document.getElementById("email").value;
+    const nombre = document.getElementById("nombres").value;
+    const correo = document.getElementById("email").value;
     const telefono = document.getElementById("telefono").value;
-    const usuario = document.getElementById("usuario").value;
-    const contrasena = document.getElementById("contrasena").value;
+    const username = document.getElementById("usuario").value;
+    const password = document.getElementById("contrasena").value;
 
-    registrarUsuario(cedula, nombres, email, telefono, usuario, contrasena);
+    registrarUsuario(cedula,nombre,correo,telefono,username,password);
 
     Swal.fire({
         position: 'center',

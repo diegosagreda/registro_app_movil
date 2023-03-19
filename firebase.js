@@ -18,12 +18,13 @@ import {ref, onValue} from "https://www.gstatic.com/firebasejs/9.6.2/firebase-da
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDVT4q7J1AbIe6UcPdXn9YNECg1adgrLew",
-  authDomain: "app-movil-ef2ab.firebaseapp.com",
-  projectId: "app-movil-ef2ab",
-  storageBucket: "app-movil-ef2ab.appspot.com",
-  messagingSenderId: "232983626384",
-  appId: "1:232983626384:web:954a7621ed366c59078e15"
+  apiKey: "AIzaSyABtkU4hDjkZE84TmhTfKMfrBjLGn5kSr4",
+  authDomain: "proyectomoviles-9e9ab.firebaseapp.com",
+  projectId: "proyectomoviles-9e9ab",
+  storageBucket: "proyectomoviles-9e9ab.appspot.com",
+  messagingSenderId: "139336372275",
+  appId: "1:139336372275:web:6fc68e6ce3a0dcdad91346",
+  measurementId: "G-XFQ5B6H7HR"
 };
 
 // Initialize Firebase
@@ -32,5 +33,5 @@ export const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
 
 
-export const registrarUsuario = (cedula,nombres,email,telefono,usuario,contrasena) =>
-  addDoc(collection(db, "usuarios"), {cedula,nombres,email,telefono,usuario,contrasena});
+export const registrarUsuario = (cedula,nombre,correo,telefono,username,password) =>
+  addDoc(collection(db, "users"), {cedula,nombre,correo,telefono,username,password});
